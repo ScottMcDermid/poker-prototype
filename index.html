@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poker Prototype</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="poker-ui">
+      <div class="log">
+        <button type="button" class="filter history">HISTORY</button>
+        <button type="button" class="filter messages">MESSAGES</button>
+        <div class="entries">
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry history">Scott (cool 5 card hand) 3000</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Scott: LOL</div>
+          <div class="entry message">Troy: WUT</div>
+        </div>
+      </div>
+      <button type="button" class="action fold">FOLD</button>
+      <div class="bet-container">
+        <button type="button" class="action check-call">CALL (2750)</button>
+        <button type="button" class="action raise-allin">RAISE (4500)</button>
+        <div class="slider-container">
+          <div class="bet slider" data-progress="0">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+      <div class="time">
+        <div class="label">TIME</div>
+        <div class="progress"></div>
+      </div>
+      <div class="hand">
+        <div class="hand-container">
+          <div class="card">
+            <div class="suit hearts"></div>
+            <div class="rank">Q</div>
+          </div>
+          <div class="card">
+            <div class="suit hearts"></div>
+            <div class="rank">K</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mask"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0px;
+  overflow: hidden;
+}
+
+.mask
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+
+  cursor: n-resize;
+}
+
+.poker-ui
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+  background-color: #EFEFEF;
+  background-image: url(table.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.poker-ui .log
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  width: 20%;
+  min-width: 200px;
+  height: 50%;
+  background-color: #FFF;
+  border: 2px solid #000;
+}
+
+.poker-ui .log .filter
+{
+  width: 50%;
+  float: left;
+  border: 1px solid #000;
+  background-color: #333;
+  margin: 0px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.poker-ui .log .filter:hover
+{
+  background-color: #444;
+}
+
+.poker-ui .log .filter:active
+{
+  background-color: #222;
+}
+
+.poker-ui .entry.message
+{
+  border-left: 5px solid #00AEF2;
+}
+
+.poker-ui .entry.history
+{
+  border-left: 5px solid #F25100;
+}
+
+.poker-ui .entry
+{
+  line-height: 35px;
+  border-bottom: 1px solid #AAA;
+  cursor: default;
+  padding-left: 5px;
+}
+
+.poker-ui .entry:hover
+{
+  background-color: #EEE;
+}
+
+.poker-ui .action
+{
+  position: absolute;
+  padding: 30px;
+  margin: 0px;
+  z-index: 10;
+  height: 126px;
+
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #FFF;
+
+  background-color: #333;
+  border: 2px solid #000;
+}
+
+.poker-ui .action:hover
+{
+  background-color: #444;
+}
+
+.poker-ui .action:active
+{
+  background-color: #333;
+}
+
+.poker-ui .fold
+{
+  bottom: 0px;
+  left: 0px;
+}
+
+.poker-ui .bet-container
+{
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 200px;
+}
+
+.poker-ui .bet-container .check-call
+{
+  bottom: 0px;
+  width: 100%;
+}
+
+.poker-ui .bet-container .raise-allin
+{
+  top: 0px;
+  width: 100%;
+}
+
+.poker-ui .bet-container .slider-container
+{
+  position: relative;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  height: 100%;
+  width: 100%;
+}
+
+.poker-ui .bet-container .slider
+{
+  margin-left: 60px;
+
+  cursor: n-resize;
+
+  height: 100%;
+  width: 80px;
+
+  background-color: 000;
+  border: 2px solid #000;
+  z-index: 4;
+}
+
+.poker-ui .bet-container .slider .progress
+{
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #000;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+
+  z-index: 5;
+}
+
+.poker-ui .time
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border-top: 2px solid #000;
+}
+
+.poker-ui .label
+{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.poker-ui .time .progress
+{
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #000;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+
+  z-index: 5;
+
+}
+
+.hand {
+  position: absolute;
+  bottom: 50px;
+  margin: auto;
+  width: 100%;
+}
+
+.hand-container {
+  width: 108px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  float: left;
+  margin: 2px;
+  width: 50px;
+  height: 75px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #FFF;
+  font-weight: 700;
+  font-family: serif; }
+  .card.back {
+    background: repeating-linear-gradient(45deg, #bc6d60, #bc6d60 3px, #985246 3px, #985246 6px); }
+  .card .rank,
+  .card .suit {
+    position: absolute; }
+  .card .rank {
+    top: 2px;
+    left: 2px; }
+  .card .suit {
+    bottom: 2px;
+    right: 2px; }
+  .card .suit.clubs, .card .suit.spades {
+    color: #000; }
+  .card .suit.diamonds, .card .suit.hearts {
+    color: #F00; }
+  .card .suit.spades:before {
+    content: "\2660"; }
+  .card .suit.clubs:before {
+    content: "\2663"; }
+  .card .suit.hearts:before {
+    content: "\2665"; }
+  .card .suit.diamonds:before {
+    content: "\2666"; }

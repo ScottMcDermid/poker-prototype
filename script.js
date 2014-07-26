@@ -48,7 +48,7 @@ $(function() {
         if (progress === 1) {
           $('.raise-allin').text('ALL IN ('+ chips +')');
         } else if (progress === 0) {
-          $('.raise-allin').text('MIN RAISE ('+ chips +')');
+          $('.raise-allin').text('MIN BET ('+ chips +')');
         } else {
           $('.raise-allin').text('RAISE ('+ chips +')');
         }
